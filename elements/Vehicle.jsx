@@ -5,16 +5,6 @@ import "leaflet/dist/leaflet.css";
 import { FaPauseCircle, FaStopCircle , FaPlayCircle , FaArrowLeft, FaArrowRight, FaRedoAlt } from 'react-icons/fa'; 
  
 
-
-
-
-// const vehicleIcon = new Icon({
-//   iconUrl :'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcphuaKSAkmf36t2rv87bW4_XkvsEB5lO1cMaPZjJJJluajeE&s',
-//   iconSize :[32,32],
-//   iconAnchor:[25,20],
-
-// })
-
 const Vehicle = () => {
   const [path, setPath] = useState([]);
   const [position, setPosition] = useState(null);
@@ -87,7 +77,7 @@ const Vehicle = () => {
   useEffect(() => {
     const fetchPath = async () => {
       try {
-        const res = await fetch('https://iswm-indore-api.acceldash.com/api/v1/gps_log_page/357454071473159/2025-04-04/1?perPage=600&start_time=&end_time=&page=1');
+        const res = await fetch('//Api');
         const data = await res.json();
         console.log( data);
 
